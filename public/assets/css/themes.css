@@ -1,0 +1,9 @@
+:root {
+	--background: linear-gradient(#93a4b3, #6d8091);
+	--primary-text: #222222;
+}
+
+body[theme="dark"] {
+	--background: linear-gradient(#535c64, #3a3f44);
+	--primary-text: #ffffff;
+}

@@ -1,0 +1,22 @@
+@font-face {
+	font-family: "SF-Pro";
+	src: url("/assets/fonts/sfpro.otf");
+}
+@import url("/assets/css/themes.css");
+
+* {
+	font-family: "SF-Pro";
+	color: var(--primary-text);
+}
+body {
+	background: var(--background);
+}
+.pageDisplay {
+	position: relative;
+	width: 99vw;
+	height: 95vh;
+	border: 2px solid;
+	border-radius: 16px;
+	backdrop-filter: blur(20px);
+	bottom: 0;
+}
