@@ -1,6 +1,6 @@
 :root {
 	--background: linear-gradient(#84b8e6, #20507a);
-	--primary-text: #222222;
+	--primary-text: white;
 }
 
 body[theme="dark"] {
