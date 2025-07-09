@@ -1,13 +1,10 @@
+@import url("themes.css");
+
 @font-face {
 	font-family: "SF-Pro";
 	src: url("/assets/fonts/sfpro.otf");
 }
-@import url("/assets/css/themes.css");
 
-:root {
-	--background: linear-gradient(#93a4b3, #6d8091);
-	--primary-text: #222222;
-}
 * {
 	font-family: "SF-Pro";
 	color: var(--primary-text);
@@ -61,10 +58,11 @@ body {
 	border: 1px solid #ccc;
 	border-radius: 32px;
 	background: transparent;
+	background: rgba(102, 140, 173, 0.308);
 	backdrop-filter: blur(10px) saturate(180%);
 	text-align: center;
-	box-shadow: 0px 0px 20px rgba(80, 80, 80, 0.76);
-	box-shadow: inset 0px 0px 10px rgba(190, 190, 190, 0.671);
+	box-shadow: 0px 0px 20px rgba(112, 112, 112, 0.76),
+		inset 0px 0px 14px rgba(190, 190, 190, 0.671);
 	font-size: 1rem;
 	font-weight: 300;
 	color: white;
