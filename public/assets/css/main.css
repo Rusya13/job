@@ -4,19 +4,36 @@
 }
 @import url("/assets/css/themes.css");
 
+:root {
+	--background: linear-gradient(#93a4b3, #6d8091);
+	--primary-text: #222222;
+}
 * {
 	font-family: "SF-Pro";
 	color: var(--primary-text);
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+	overflow: hidden;
 }
 body {
 	background: var(--background);
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 .pageDisplay {
-	position: relative;
 	width: 99vw;
 	height: 95vh;
 	border: 2px solid;
 	border-radius: 16px;
 	backdrop-filter: blur(20px);
-	bottom: 0;
+	margin: auto auto 1vh auto;
+	overflow: hidden;
+}
+.pageDisplay iframe {
+	border: none;
 }
