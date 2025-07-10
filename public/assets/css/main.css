@@ -15,7 +15,6 @@ html,
 body {
 	height: 100%;
 	overflow: hidden;
-	backdrop-filter: saturate(180%);
 }
 body {
 	background: var(--background);
@@ -28,7 +27,7 @@ body {
 	height: 93vh;
 	border: 2px solid rgba(204, 204, 204, 0.897);
 	border-radius: 16px;
-	backdrop-filter: blur(20px);
+	/*backdrop-filter: blur(20px);*/
 	margin: auto auto 1vh auto;
 	overflow: hidden;
 }
@@ -112,7 +111,7 @@ body {
 	height: 4vh;
 	background: rgba(88, 88, 88, 0.4);
 	margin-right: 5px;
-	border-radius: 3vh;
+	border-radius: 2vh;
 	backdrop-filter: blur(20px);
 	display: flex;
 	align-items: center;
