@@ -15,7 +15,7 @@ function addTab() {
 
 	const page = document.createElement("iframe");
 	page.src = "home.html";
-	page.id = tabId;
+	page.id = tabId + "-f";
 	page.style.display = "none";
 	pageDisplay.appendChild(page);
 
@@ -35,8 +35,18 @@ function activateTab(tabId) {
 		}
 	});
 	iframes.forEach((page) => {
-		page.style.display = page.id == tabId ? "inline" : "none";
+		page.style.display = page.id == tabId+"-f" ? "inline" : "none";
 	});
+}
+function closeTab(tabId) {
+	console.log(activeTabs)
+	if(activeTabs.length <= 1) return;
+	const currentTab = activeTabs.findIndex((tab) => tab.id === tabId);
+	if(currentTab == null) return;
+	activeTabs.splice(currentTab)
+	document.getElementById(tabId).remove()
+	//retarded way t do this but idc
+	document.getElementById(tabId + "-f").remove()
 }
 addTab();
 addTabButton.addEventListener("click", addTab);
