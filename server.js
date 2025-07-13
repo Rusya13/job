@@ -26,6 +26,7 @@ server.on("upgrade", (req, socket, head) => {
 	}
 });
 
-server.listen(8080, () => {
-	console.log("running on port 8080");
+server.listen(80, () => {
+	console.log("running on port 80");
+	console.log("http://localhost")
 });

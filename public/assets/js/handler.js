@@ -44,7 +44,7 @@ form.addEventListener("submit", async (event) => {
     await connection.setTransport("/yxope/index.mjs", [{ wisp: wispUrl }]);
   }
 
-  const url = search(input.value.trim(), "https://duckduckgo.com/?q=%s")
+  const url = search(input.value.trim(), "https://search.brave.com/search?q=")
 
   location.href = scramjet.encodeUrl(url);
 });
