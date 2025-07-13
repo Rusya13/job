@@ -26,6 +26,6 @@ server.on("upgrade", (req, socket, head) => {
 	}
 });
 
-server.listen(8008, () => {
-	console.log("running on port 8008 (haha get it im so funny)");
+server.listen(8080, () => {
+	console.log("running on port 8080");
 });

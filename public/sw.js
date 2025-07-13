@@ -7,8 +7,8 @@ if (navigator.userAgent.includes("Firefox")) {
 }
 
 importScripts(
-	"https://scramjet.mercurywork.shop/scram/scramjet.shared.js",
-	"https://scramjet.mercurywork.shop/scram/scramjet.worker.js"
+	"/scram/scramjet.shared.js",
+	"/scram/scramjet.worker.js"
 );
 
 const scramjet = new ScramjetServiceWorker();
