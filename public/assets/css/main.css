@@ -104,19 +104,23 @@ body {
 	cursor: pointer;
 }
 .tabContainer .close {
-	position: relative;
+	position: absolute;
 	width: 24px;
 	height: 24px;
 	border-radius: 40%;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 5px;
 	background: transparent;
 	border: none;
 	background: rgba(88, 88, 88, 0.4);
 	cursor: pointer;
 	z-index: 999;
+	pointer-events: auto;
+	transition: 0.3s ease-in-out;
 }
-.tabContainer .close::hover {
-	background: rgba(122, 122, 122, 0.4);
+.tabContainer .close:hover {
+	background: rgba(122, 122, 122, 0.6);
 }
 .tabContainer .tab {
 	position: relative;
@@ -135,10 +139,10 @@ body {
 	transition: 0.3s ease-in-out;
 }
 .tabContainer .active {
-	background: rgba(145, 145, 145, 0.4);
+	background: rgba(145, 145, 145, 0.4) !important;
 }
 .tabContainer .tab:hover {
-	background: rgba(145, 145, 145, 0.4);
+	background: rgba(122, 122, 122, 0.4);
 }
 .tabContainer .tab span {
 	margin: 0 5px;
