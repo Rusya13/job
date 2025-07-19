@@ -17,7 +17,7 @@ function search(input, template) {
   } catch (err) {}
 
   try {
-    const url = new URL(`http://${input}`);
+    const url = new URL(`https://${input}`);
     if (url.hostname.includes(".")) return url.toString();
   } catch (err) {}
 
@@ -36,15 +36,19 @@ let wispUrl =
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   try {
+    //later when i add uv
     //registerSW()
-  } catch (err){
-    console.log(err)
-  }  
- if ((await connection.getTransport()) !== "/yxope/index.mjs") {
-    await connection.setTransport("/yxope/index.mjs", [{ wisp: wispUrl }]);
+  } catch (err) {
+    console.log(err);
+  }
+  if ((await connection.getTransport()) !== "/epoxy/index.mjs") {
+    await connection.setTransport("/epoxy/index.mjs", [{ wisp: wispUrl }]);
   }
 
-  const url = search(input.value.trim(), "https://search.brave.com/search?q=")
+  const url = search(
+    input.value.trim(),
+    "https://search.brave.com/search?q=%s"
+  );
 
   location.href = scramjet.encodeUrl(url);
 });

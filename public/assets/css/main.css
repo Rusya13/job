@@ -25,9 +25,8 @@ body {
 .pageDisplay {
 	width: 99vw;
 	height: 93vh;
-	border: 2px solid rgba(204, 204, 204, 0.897);
+	border: 1px solid rgba(204, 204, 204, 0.897);
 	border-radius: 16px;
-	/*backdrop-filter: blur(20px);*/
 	margin: auto auto 1vh auto;
 	overflow: hidden;
 }
@@ -82,6 +81,7 @@ body {
 	color: var(--primary-text);
 	font-weight: 300;
 }
+
 .tabContainer {
 	position: absolute;
 	top: 1vh;
@@ -103,11 +103,26 @@ body {
 	background: rgba(88, 88, 88, 0.4);
 	cursor: pointer;
 }
+.tabContainer .close {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	border-radius: 40%;
+	right: 5px;
+	background: transparent;
+	border: none;
+	background: rgba(88, 88, 88, 0.4);
+	cursor: pointer;
+	z-index: 999;
+}
+.tabContainer .close::hover {
+	background: rgba(122, 122, 122, 0.4);
+}
 .tabContainer .tab {
 	position: relative;
 	top: 1vh;
 	width: 100%;
-	max-width: 100px;
+	max-width: 150px;
 	height: 4vh;
 	background: rgba(88, 88, 88, 0.4);
 	margin-right: 5px;
@@ -115,6 +130,8 @@ body {
 	backdrop-filter: blur(20px);
 	display: flex;
 	align-items: center;
+	white-space: nowrap;
+	overflow: hidden;
 	transition: 0.3s ease-in-out;
 }
 .tabContainer .active {

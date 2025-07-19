@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Job</title>
-		<link rel="stylesheet" href="/assets/css/main.css" />
-	</head>
-	<body>
-		<div class="tabContainer">
-			<button id="addTab">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-plus-icon lucide-plus"
-				>
-					<path d="M5 12h14" />
-					<path d="M12 5v14" />
-				</svg>
-			</button>
-		</div>
-		<main class="pageDisplay"></main>
-		<div id="hiddenIframes" style="display: none"></div>
-		<script src="/assets/js/tabs.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <div class="tabContainer">
+      <div class="tab">
+        <span>test tab</span
+        ><button class="close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-x-icon lucide-x"
+          >
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </button>
+      </div>
+      <button id="addTab">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-plus-icon lucide-plus"
+        >
+          <path d="M5 12h14" />
+          <path d="M12 5v14" />
+        </svg>
+      </button>
+    </div>
+    <main class="pageDisplay"></main>
+    <div id="hiddenIframes" style="display: none"></div>
+    <script src="/assets/js/tabs.js"></script>
+  </body>
 </html>
